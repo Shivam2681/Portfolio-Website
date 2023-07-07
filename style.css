@@ -346,7 +346,7 @@ nav .icon2{
   }
   .rightsection img{
     width: 390px;
-    margin: 14px -109px;
+    margin: 14px -117px;
   }
   .firstsection > div {
     width: 46%;
@@ -372,7 +372,7 @@ nav .icon2{
     position: fixed;
     top: 0;
     right: -210px;
-    width: 200px;
+    width: 192px;
     height: 100vh;
     padding-top: 50px;
     padding-right: 18px;
@@ -390,7 +390,7 @@ nav .icon2{
     left: 25px;
   }
   .about-col-1 img{
-    width: 310px;
+    width: 297px;
     margin-bottom: 30px;
   }
   .about-col-2{
@@ -409,11 +409,15 @@ nav .icon2{
   .copyright{
     padding: 20px 7px;
   }
-  .container{
+  /* .container{
     margin-right: -15px;
-  }
+  } */
   .contact-left, .contact-right{
     flex-basis: 90%;
+  }
+  html, body{
+    overflow-x: hidden;
+    max-width: 100%;
   }
 }
 
