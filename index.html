@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Portfolio</title>
+    <link rel="shortcut icon" href="codeIcon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="Pics/cross-icon.png" alt="" class="icon2" onclick="closemenu()">
+                </ul>
+                <img src="Pics/menu.png" alt="" class="icon" onclick="openmenu()">
+            </nav>
+        </div>
+    </div>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name is <span class="purple">Shivam</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+                <div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                
+            </div>
+            <div class="rightsection">
+                <img src="photo1.png" alt="photo">
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Designer'],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="messi1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a final year student of Electronics and Communication Engineering at Netaji Subhas University of Technology (NSUT). I have a strong passion for web development and android development.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Language</span><br>C/C++,Python,HTML,CSS,Javascript,<br>React.js,Node.js</li>
+                        <li><span>Web Developer</span><br>Web App development</li>
+                        <li><span>MLAI</span><br>Machine Learning Model Development</li>
+                        <li><span>SQL</span><br>Designing of Database</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Internship</span><br>2 month internship at nullclass</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>10+2</span><br>Kendriya Vidyalaya Gole Market, New Delhi <br>2018-2020</li>
+                        <li><span>College</span><br>Btech in Electronics & Communication from Netaji Subhash University Of Technology, New Delhi <br>2020-2024</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- services -->
+
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <img src="codeIcon.png" alt="">
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse repellat aperiam tempore corporis voluptatibus eos laborum ab consequatur dolorum ipsam.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="crop.png" alt="" class="crop">
+                <h2>Video Editing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse repellat aperiam tempore corporis voluptatibus eos laborum ab consequatur dolorum ipsam.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="sql.png" alt="">
+                <h2>Database Management</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse repellat aperiam tempore corporis voluptatibus eos laborum ab consequatur dolorum ipsam.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media WebApp</h3>
+                    <p>Using this webapp you can chat with your friends</p>
+                    <a href="#"><img src="Pics/link.png" alt=""></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png" alt="">
+                <div class="layer">
+                    <h3>ML-AI Model</h3>
+                    <p>This ML-AI model is used to detect Emotion on face</p>
+                    <a href="#"><img src="Pics/link.png" alt=""></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png" alt="">
+                <div class="layer">
+                    <h3>Game</h3>
+                    <p>Developed a Rock Paper Scissor Game using a combination of Arduino, sensors, and peripheral units.</p>
+                    <a href="#"><img src="Pics/link.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><img src="Pics/email.png" alt="">shekharshivam51@gmail.com</p>
+                <p><img src="Pics/phone.png" alt="">8171240029</p>
+                <div class="social-icons">
+                  <a href=""><img src="Pics/instagram.png" ></a>
+                  <a href="https://www.linkedin.com/in/shivam-raj-shekhar-765231248/"><img src="Pics/linkedin.png"></a>
+                </div>
+                <!-- <a href="" class="btn btn2">Download CV</a> -->
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169 Shivam. All rights reserved</p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-210px";
+    }
+  </script>
+</body>
+</html>
