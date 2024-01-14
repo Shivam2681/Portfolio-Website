@@ -310,11 +310,16 @@ section .title::after{
 .services .serv-content .card .github{
     padding-top: 10px;
     font-size: 15px;
-    color: crimson;
+    /* color: crimson; */
     transition: color 0.3s ease;
 }
 .services .serv-content .card .github a{
+    border: 2px solid rgb(43, 22, 141);
+    border-radius: 5px;
+    background-color: blueviolet;
+    padding: 3px;
     font-weight: 700;
+    color: rgb(43, 22, 141);
 }
 .services .serv-content .card:hover i{
     color: #fff;
